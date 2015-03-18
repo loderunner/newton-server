@@ -7,7 +7,8 @@ app = Flask(__name__)
 @app.route("/newton", methods=['POST'])
 def newton():
     try:
-        s = solve(request.json['coeffs'], request.json['x0'])
+        data = request.get_json(force=True)
+        s = solve(data['coeffs'], data['x0'])
         res = make_response(json({'solution' : s}))
         res.headers['Content-Type'] = 'application/json; charset=utf-8'
         return res
