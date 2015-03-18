@@ -104,6 +104,7 @@ and run the `bootstrap.sh` script again.
 
 ## Licence
 
+```
 newton-server: Simple Flask app server to solve polynomial equations using Newton's method
 Copyright (c) 2015 Charles Francoise
 
@@ -119,3 +120,4 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>
+```
