@@ -6,8 +6,11 @@ app = Flask(__name__)
 
 @app.route("/newton", methods=['POST'])
 def newton():
-    s = solve(request.json['coeffs'], request.json['x0'])
-    return json({'solution' : s})
+    try:
+        s = solve(request.json['coeffs'], request.json['x0'])
+        return json({'solution' : s})
+    except RuntimeError as e:
+        return make_response(unicode(e), 404)
 
 if __name__ == "__main__":
     app.run()
