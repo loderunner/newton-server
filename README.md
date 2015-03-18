@@ -45,7 +45,9 @@ User-Agent: HTTPie/0.8.0
     ], 
     "x0": 0
 }
+```
 
+```
 HTTP/1.0 200 OK
 Content-Length: 34
 Content-Type: text/html; charset=utf-8
@@ -78,7 +80,9 @@ User-Agent: HTTPie/0.8.0
     ], 
     "x0": 0
 }
+```
 
+```
 HTTP/1.0 404 NOT FOUND
 Content-Length: 64
 Content-Type: text/html; charset=utf-8
